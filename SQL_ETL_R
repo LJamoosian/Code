@@ -1,0 +1,14 @@
+##############Rquired Libraries
+
+#call library of SQL
+library(sqldf)
+# Titanic Data set
+library(PASWR)
+#Graph
+library(ggplot2)
+
+
+#############Coding
+
+####
+
