@@ -1,0 +1,16 @@
+name =c('Mr.Moss','Mrs.Ladybird','Ms.Bird')
+salary= c(21000, 23400, 26800)
+startdate= as.Date(c('2010-11-1','2008-3-25','2007-3-14'))
+df1=data.frame(name, salary,startdate)
+
+salary_2yrs=c(31000, 63400, 96800)
+grade=c(5,8,9)
+status=c("hrl","ltn","mmi")
+df2=data.frame(name, salary_2yrs,grade, status)
+
+#merging df1 and df2
+df1_df2=merge(df1,df2, by.df1=name, by.df2=name)
+
+#or 
+df1_df2=cbind(df1,df2)
+
